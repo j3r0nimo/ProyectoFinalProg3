@@ -1,0 +1,105 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #b80000;
+    padding: 10px 0;
+    box-shadow: 0 2px 15px rgba(255, 0, 0, 0.3);
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #ff1a1a;
+    color: #000;
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 20px 15px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ff1a1a;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* imagenes */
+  .imagenes {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .imagenes img {
+    width: 600px;       
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .imagenes img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Imágenes individuales dentro de main */
+  main img {
+    display: block;
+    margin: 20px auto;       
+    width: 80%;            
+    max-width: none;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  main img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 15px;
+    font-size: 13px;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
