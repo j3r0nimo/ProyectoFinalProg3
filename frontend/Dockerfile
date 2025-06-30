@@ -15,6 +15,9 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 
 COPY --from=builder /app/img /usr/share/nginx/html/img
 
+RUN ls -la
+
+COPY nginx.config /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 

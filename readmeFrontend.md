@@ -1,6 +1,7 @@
 ## FRONTEND REACT - TRABAJO PRACTICO FINAL
 ---
 ### HERRAMIENTAS UTILIZADAS EN FRONT:
+- Docker: contenemos las dependencias del sitio para hacer mas facil el correrlo
 - React+Vite: crear la interfaz de usuario
 - Axios: hacer peticiones HTTP con el backend para conectar al cliente con el servidor
 - React-router-dom: manejo de navegacion entre paginas utilizado en SPAs 
@@ -22,6 +23,19 @@ frontend/
 ├── readme.md                 # README general
 └── readmeFrontend.md         # README de la parte del Frontend
 ```
+
+#### Docker:
+Requisitos:
+- docker desktop instalado
+- tras la instalacion, abrir la aplicacion y hacerlo andar
+
+Para correr el proyecto con Docker hay que poner 2 comandos en la terminal:
+```
+docker compose build
+docker compose up -d
+```
+una vez puesto esos 2 comando, ir a la url: http://localhost:3000
+
 ### FUNCIONALIDADES:
 
 #### Registro de usuario:
