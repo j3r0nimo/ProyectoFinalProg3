@@ -27,7 +27,7 @@ function CompraRealizada(){
     return(
         <main>
             <h2>COMPRA REALIZADA</h2>
-            <div className="contenedor-compra">
+            <div className="perfil">
                 <h3>ID de compra: {compra.compra.id}</h3>
                 <h3>Sector: {compra.sector}</h3>
                 <h3>Cantidad: {compra.ticketsComprados}</h3>
