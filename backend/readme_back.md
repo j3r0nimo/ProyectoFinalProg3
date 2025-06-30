@@ -135,8 +135,8 @@ const PORT = process.env.PORT || 3001;
 ---
 ```
 Contenido de las variables del archivo.env
-Se requiere cambio de DB_USER, según corresponda
-Se requiere cambio de DB_PASSWORD, según corresponda
+Se requiere cambio de DB_USER, según corresponda.
+Se requiere cambio de DB_PASSWORD, según corresponda.
 No deben quedar espacios de ningún tipo al hacer las modificaciones.
 
     DB_NAME=tickets_app
