@@ -122,10 +122,26 @@ http://localhost:3001/clientes/4              Para borrar un cliente, por id.
 ```
 
 ---
-## 9️⃣ Configuración
+## 9️⃣ Configuración del puerto
 ---
 ```
 Puerto: El servidor está escuchando en el puerto 3001.
 Este valor se configura en el archivo src/app.js
 const PORT = process.env.PORT || 3001;
+```
+
+---
+## 🔟 Configuración del archivo .env
+---
+```
+Contenido de las variables del archivo.env
+Se requiere cambio de DB_USER, según corresponda
+Se requiere cambio de DB_PASSWORD, según corresponda
+No deben quedar espacios de ningún tipo al hacer las modificaciones.
+
+    DB_NAME=tickets_app
+    DB_USER=modificar_con_su_usuario
+    DB_PASSWORD=modificar_con_su_password
+    DB_HOST=localhost
+    DB_PORT=5432
 ```
