@@ -70,10 +70,15 @@ function Perfil(){
                 <p>Codigo postal: {usuario.codigoPostal}</p>
                 
             </div>
-            <button onClick={borrar}>borrar cuenta</button>
-            <button onClick={tickets}>ver compras</button>
-            <button onClick={actualizar}>actualizar cuenta</button>
-            <button onClick={comprar}>comprar tickets</button>
+            <div>
+                <button onClick={borrar}>Borrar cuenta</button>
+                <button onClick={tickets}>Ver compras</button>
+            </div>
+            <div>
+                <button onClick={actualizar}>Actualizar cuenta</button>
+                <button onClick={comprar}>Comprar tickets</button>
+            </div>
+            
         </main>
     )
 }

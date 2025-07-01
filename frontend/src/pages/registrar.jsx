@@ -63,7 +63,7 @@ function Registrar(){
   return (
     <main>
         <h3>REGISTRE SU USUARIO</h3>
-    <form>
+    <form onSubmit={handleSubmit} id="registrar">
         <label>Nombre:</label>
         <input type="text" value={nombre} onChange={(e) => setnombre(e.target.value)} /> <br />
         {errores.nombre && <div style={{ color: 'red' }}>{errores.nombre}</div>} <br />
@@ -86,7 +86,9 @@ function Registrar(){
 
       
     </form>
-    <button type="submit" onClick={handleSubmit}>Crear usuario</button>
+    <div>
+      <button type="submit" form="registrar">Crear usuario</button>
+    </div>
     </main>
     
   );

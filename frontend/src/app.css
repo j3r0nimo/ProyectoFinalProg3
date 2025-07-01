@@ -15,11 +15,6 @@ body,
   min-height: 100vh;
 }
 
-form, .perfil {
-  border: 4px solid;
-  padding: 30px;
-}
-
 body {
   height: 100%;
   margin: 0;
@@ -115,6 +110,13 @@ main img:hover {
   transform: scale(1.03);
 }
 
+div button {
+  display: inline-block;
+  margin: 10px;
+  width: 400px;
+  height: 45px;
+}
+
 button {
   border-radius: 8px;
   background-color: #363636;
@@ -152,4 +154,73 @@ footer {
   margin-top: 40px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
+}
+
+/* Diseño de Formulario */
+form,
+.perfil {
+  border: 4px solid #b80000;
+  padding: 20px;
+  max-width: fit-content;
+  margin: 30px auto 10px auto;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  color: #ff1a1a;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+form input, form select {
+  width: 200px
+}
+form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-campo {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1.5px solid #555;
+  background-color: #333;
+  color: #eee;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-campo:focus {
+  border-color: #ff1a1a;
+  background-color: #444;
+}
+
+form a {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  color: #ff1a1a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+button {
+  border-radius: 8px;
+  background-color: #363636;
+  border: none;
+  margin: 20px auto 0 auto;
+  padding: 8px 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: normal;
+  transition: background-color 0.3s;
+  display: block;
+  max-width: 150px;
+}
+
+button:hover {
+  background-color: #4d4d4d;
 }

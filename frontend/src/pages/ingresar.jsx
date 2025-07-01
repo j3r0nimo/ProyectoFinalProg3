@@ -42,18 +42,19 @@ function Compra() {
 
   return (
     <main>
-      <form>
+      <form onSubmit={handleSubmit} id="ingresar">
         <label>Ingrese su DNI:</label><br />
         <input type="text" value={dni} onChange={(e) => setdni(e.target.value)} />
-
-
-        <button type="submit" onClick={handleSubmit}>Buscar</button><br />
         {errores.dni && <div style={{ color: 'red' }}>{errores.dni}</div>}
         <a href='/registrar'><b>si no tiene una cuenta haga click aca</b></a>
       </form>
-    </main>
 
+      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <button type='submit' form='ingresar'>Buscar</button>
+      </div>
+    </main>
   );
+
 }
 
 export default Compra;

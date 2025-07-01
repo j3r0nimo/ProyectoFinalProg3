@@ -78,32 +78,34 @@ function Actualizar(){
   return (
     <main>
         <h3>ACTUALIZE SU USUARIO</h3>
-    <form>
-        <label>nombre:</label>
-        <input type="text" value={nombre} onChange={(e) => setnombre(e.target.value)} required /> <br />
+    <form onSubmit={handleSubmit} id="actualizar">
+        <label>Nombre:</label>
+        <input type="text" value={nombre} onChange={(e) => setnombre(e.target.value)} /> <br />
         {errores.nombre && <div style={{ color: 'red' }}>{errores.nombre}</div>} <br />
 
-        <label>dni:</label>
-        <input type="text" value={dni} onChange={(e) => setDni(e.target.value)} required /><br />
+        <label>DNI:</label>
+        <input type="text" value={dni} onChange={(e) => setDni(e.target.value)} /><br />
         {errores.dni && <div style={{ color: 'red' }}>{errores.dni}</div>} <br />
 
         <label>Numero de tarjeta:</label>
-        <input type="text" value={tarjetaNro} onChange={(e) => setTarjetaNro(e.target.value)} required /><br />
+        <input type="text" value={tarjetaNro} onChange={(e) => setTarjetaNro(e.target.value)} /><br />
         {errores.tarjetaNro && <div style={{ color: 'red' }}>{errores.tarjetaNro}</div>} <br />
 
         <label>Fecha de tarjeta:</label>
-        <input type="text" value={tarjetaMA} onChange={(e) => setTarjetaMA(e.target.value)} required /><br />
+        <input type="text" value={tarjetaMA} onChange={(e) => setTarjetaMA(e.target.value)} /><br />
         {errores.tarjetaMA && <div style={{ color: 'red' }}>{errores.tarjetaMA}</div>} <br />
 
         <label>Codigo postal:</label>
-        <input type="text" value={codigoPostal} onChange={(e) => setCodigoPostal(e.target.value)} required /><br />
+        <input type="text" value={codigoPostal} onChange={(e) => setCodigoPostal(e.target.value)} /><br />
         {errores.codigoPostal && <div style={{ color: 'red' }}>{errores.codigoPostal}</div>} <br />
       
       
       
     </form>
-    <button type="submit" onClick={volver}>Volver</button>
-    <button type="submit" onClick={handleSubmit}>Actualizar usuario</button>
+    <div>
+      <button type="submit" onClick={volver}>Volver</button>
+      <button type="submit" form="actualizar">Actualizar usuario</button>
+    </div>
     </main>
     
   );

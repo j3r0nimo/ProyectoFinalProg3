@@ -34,7 +34,7 @@ function CompraRealizada(){
                 <h3>Total pagado: ${compra.total}</h3>
             </div>
             
-            <button onClick={volver}>volver</button>
+            <button onClick={volver}>Volver</button>
         </main>
     )
 }
