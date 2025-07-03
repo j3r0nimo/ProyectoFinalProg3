@@ -211,7 +211,7 @@ No deben quedar espacios de ningún tipo al hacer las modificaciones.
     DB_PORT=5432
 ```
 
-## Proyecto Final de la materia Programacion 3
+## Integrantes
 
 - Arce Carlos
 - Baltian Ortiz Jeronimo
